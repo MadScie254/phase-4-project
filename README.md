@@ -1,74 +1,81 @@
 # Sentiment Analysis Project
 
-This project is focused on sentiment analysis using deep learning techniques to classify the sentiment expressed in text data. The goal is to predict whether the sentiment is positive, negative, or neutral.
+![Sentiment Analysis](sentiment-analysis.jpg)
+
+## Overview
+
+This repository contains the code and resources for a sentiment analysis project. Sentiment analysis, also known as opinion mining, is the process of determining the sentiment or emotional tone expressed in a piece of text, such as a tweet or a product review. In this project, we use machine learning techniques to classify text data into different sentiment categories.
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Project Overview](#project-overview)
-- [Data](#data)
-- [Data Preprocessing](#data-preprocessing)
-- [Modeling](#modeling)
-- [Evaluation Metrics](#evaluation-metrics)
-- [Results](#results)
+- [Project Description](#project-description)
+- [Dataset](#dataset)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
 - [Usage](#usage)
-- [Dependencies](#dependencies)
+- [Model](#model)
+- [Evaluation](#evaluation)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
 - [License](#license)
 
-## Introduction
+## Project Description
 
-Sentiment analysis, also known as opinion mining, is a natural language processing (NLP) task that involves determining the sentiment expressed in a piece of text, whether it's positive, negative, or neutral. This project employs deep learning techniques to build a sentiment analysis model capable of classifying text data.
+The main goal of this project is to build a sentiment analysis model capable of classifying text data into different sentiment categories, such as positive, negative, or neutral. The project follows a series of data science steps, including data preprocessing, model development, and evaluation.
 
-## Project Overview
+## Dataset
 
-- **Data**: We used a dataset containing text data and corresponding sentiment labels. The data was preprocessed to prepare it for modeling.
+We used two datasets in this project:
 
-- **Modeling**: Deep learning models, including recurrent neural networks (RNNs) and convolutional neural networks (CNNs), were implemented and trained on the data to perform sentiment classification.
+1. **twitter_data.csv**: This dataset contains raw Twitter data, including tweet text and other relevant information.
 
-- **Evaluation**: The models' performance was assessed using various evaluation metrics, including accuracy, precision, recall, F1-score, and confusion matrices.
+2. **preprocessed_twitter_data.csv**: This dataset is the result of our data preprocessing pipeline, where we cleaned, tokenized, and prepared the data for model training.
 
-- **Deployment**: The final trained model can be deployed for real-world sentiment analysis tasks.
+## Project Structure
 
-## Data
+The project is structured as follows:
 
-The dataset used in this project contains the following columns:
+- `app.py`: Flask web application for deploying the sentiment analysis model.
+- `requests.py`: Contains HTTP request examples for interacting with the deployed model.
+- `sentiment_analysis.ipynb`: Jupyter Notebook containing the data preprocessing, model training, and evaluation code.
+- `sentiment_model.h5`: The trained sentiment analysis model in HDF5 format.
+- `sentiment_prediction.py`: Python script for making predictions using the trained model.
+- `tokenizer.pkl`: Pickle file containing the tokenizer used for text tokenization.
 
-- `tweet_text`: The text of the tweet.
-- `emotion_in_tweet_is_directed_at`: Whether the emotion expressed in the tweet is directed at a brand or product (Positive emotion, Negative emotion, No emotion toward brand or product).
-- `is_there_an_emotion_directed_at_a_brand_or_product`: Indicates if there is an emotion directed towards a brand or product in the tweet (Yes/No).
+## Installation
 
-## Data Preprocessing
+To set up the project environment, follow these steps:
 
-Data preprocessing is a crucial step in any NLP project. Here are some of the preprocessing steps applied:
+1. Clone this repository to your local machine using the following command:
 
-- Text cleaning: Removal of special characters, punctuation, and extra spaces.
-- Tokenization: Splitting text into individual words or tokens.
-- Padding: Ensuring that sequences have the same length for modeling.
 
-## Modeling
+2. Install the required Python libraries using pip:
 
-We experimented with various deep-learning architectures, including RNNs and CNNs. These models were implemented using Keras, a high-level deep-learning library.
-
-## Evaluation Metrics
-
-We used the following evaluation metrics to assess model performance:
-
-- Accuracy: Measures the overall correctness of the model's predictions.
-- Precision, Recall, and F1-Score: Provide insights into the model's performance for each sentiment class.
-- Confusion Matrix: Breaks down true positives, true negatives, false positives, and false negatives.
-
-## Results
-
-The model achieved the following results:
-
-- Accuracy: 0.64
-- Precision, Recall, F1-Score: Vary depending on the class and dataset distribution.
 
 ## Usage
 
-To use the sentiment analysis model:
+- To train and evaluate the sentiment analysis model, open and run the `sentiment_analysis.ipynb` Jupyter Notebook.
 
-1. Clone this repository:
+- To deploy the model locally, run `app.py` and make HTTP POST requests using `requests.py`.
 
-   ```bash
-   git clone https://github.com/your-username/sentiment-analysis-project.git
+- To make predictions using the trained model, use `sentiment_prediction.py`.
+
+## Model
+
+The sentiment analysis model is built using deep learning techniques and is available as `sentiment_model.h5`.
+
+## Evaluation
+
+We evaluated the model's performance using various evaluation metrics, including accuracy, precision, recall, and F1-score. You can find the detailed evaluation results in the Jupyter Notebook.
+
+## Deployment
+
+The model can be deployed locally using the Flask web application in `app.py`. Follow the instructions in the `Deployment` section of the notebook for more details.
+![ExcitedGIF](https://github.com/MadScie254/phase-4-project/assets/134260642/56e39d40-3e91-456a-8ca9-3eeb6d2179ee)
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---

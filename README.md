@@ -79,3 +79,5 @@ The model can be deployed locally using the Flask web application in `app.py`. F
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
+## Presentation Link
+https://www.canva.com/design/DAFuucmscsQ/1Iwuj-esWGompzQVK4Jsrg/view?utm_content=DAFuucmscsQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink

@@ -1,6 +1,6 @@
 # Sentiment Analysis Project
 
-![maxresdefault](https://github.com/MadScie254/phase-4-project/assets/134260642/71bd56ab-bef3-4206-8cbe-036b12312311)
+![DataAnalysisGIF](https://github.com/MadScie254/phase-4-project/assets/134260642/063eaaa3-0f05-40ce-bb7f-493c4aec4293)
 
 
 ## Overview

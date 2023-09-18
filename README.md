@@ -1,10 +1,11 @@
 # Sentiment Analysis Project
 
-![Sentiment Analysis](sentiment-analysis.jpg)
+![maxresdefault](https://github.com/MadScie254/phase-4-project/assets/134260642/71bd56ab-bef3-4206-8cbe-036b12312311)
+
 
 ## Overview
 
-This repository contains the code and resources for a sentiment analysis project. Sentiment analysis, also known as opinion mining, is the process of determining the sentiment or emotional tone expressed in a piece of text, such as a tweet or a product review. In this project, we use machine learning techniques to classify text data into different sentiment categories.
+This repository contains the code and resources for a sentiment analysis project. Sentiment analysis, also known as opinion mining, is the process of determining the sentiment or emotional tone expressed in a piece of text, such as a tweet or a product review. In this project, I use machine learning techniques to classify text data into different sentiment categories.
 
 ## Table of Contents
 
@@ -25,7 +26,7 @@ The main goal of this project is to build a sentiment analysis model capable of 
 
 ## Dataset
 
-We used two datasets in this project:
+I used two datasets in this project:
 
 1. **twitter_data.csv**: This dataset contains raw Twitter data, including tweet text and other relevant information.
 
@@ -66,7 +67,7 @@ The sentiment analysis model is built using deep learning techniques and is avai
 
 ## Evaluation
 
-We evaluated the model's performance using various evaluation metrics, including accuracy, precision, recall, and F1-score. You can find the detailed evaluation results in the Jupyter Notebook.
+I evaluated the model's performance using various evaluation metrics, including accuracy, precision, recall, and F1-score. You can find the detailed evaluation results in the Jupyter Notebook.
 
 ## Deployment
 
